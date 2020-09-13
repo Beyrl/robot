@@ -14,12 +14,12 @@ $(function () {
         $("#chatContent").scrollTop($("#chatContent")[0].scrollHeight);
         setTimeout(()=>{
             BotChatHtml +=`<div class="robot">
-                                <div class="portrait">BOT</div>
-                                <div class="content">你好</div>
+                                <div class="portrait"></div>
+                                <div class="content">I can't understand, can you try some other questions.</div>
                             </div>`;
             $("#chatContent").append(BotChatHtml);
             $("#chatContent").scrollTop($("#chatContent")[0].scrollHeight);
-        },2000)
+        },1000)
         
     })
     $(document).keyup(function(event){
