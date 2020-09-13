@@ -1,0 +1,103 @@
+.container{
+    position:relative;
+}
+.wrapper{
+    
+    z-index: 999;
+    width:370px;
+    height:600px;
+    position:absolute;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color:rgba(217,230,245,0.4);
+    border-radius:10px;
+}
+.chatContent{
+    width: 89%;
+    height: 83%;
+    padding: 20px;
+    border-bottom-width: 2px ;
+    border-bottom-style: solid ;
+    border-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%) 1 1 1 1;
+    overflow: scroll;
+}
+.typeContent{
+    height:8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 10px;
+    background-color: rgba(255, 255, 255 ,0.2);
+}
+.inputBox input{
+    width:250px;
+    height:40px;
+    padding:0 10px;
+    border:none;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255 ,0.1);
+}
+.btnBox {
+    width:50px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    cursor:pointer;
+/* background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%); */
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);;
+    color:#204292;
+}
+.chatContent .robot{
+    display:flex;
+    margin:20px 0;
+}
+.robot .portrait{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right:15px;
+    border-radius:50%;
+    background-color: rgba(255, 255, 255 ,0.1);
+}
+.robot .content{
+    flex:1;
+    padding:10px;
+    background-color: rgba(255, 255, 255 ,0.1);
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.chatContent .user{
+    display:flex;
+    justify-content: flex-end;
+    margin:20px 0;
+}
+.user .portrait{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left:15px;
+    border-radius:50%;
+    background-color: rgba(255, 255, 255 ,0.1);
+}
+.user .content{
+    flex:1;
+    padding:10px;
+    background-color: rgba(255, 255, 255 ,0.1);
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #E8E8E8;
+    }
